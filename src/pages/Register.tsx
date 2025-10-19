@@ -37,7 +37,7 @@ export default function Register() {
     if (error) {
       toast.error('Registrasi gagal: ' + error.message);
     } else {
-      toast.success('Registrasi berhasil! Silakan login.');
+      toast.success('Registrasi berhasil! Silahkan Verifikasi Email untuk login.');
       navigate('/login');
     }
 
