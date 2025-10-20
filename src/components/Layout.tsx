@@ -3,6 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { Sidebar } from './Sidebar';
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 import { Button } from './ui/button';
+import Logo from '../img/Logo.png';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -21,7 +22,9 @@ export function Layout({ children }: LayoutProps) {
       {/* Mobile Header + Sidebar */}
       <div className="md:hidden fixed top-0 left-0 right-0 z-40 bg-card border-b border-border">
         <div className="flex items-center justify-between p-4">
-          <h1 className="text-orange-600">🍢 Pempek Putri</h1>
+          <h1 className="text-orange-600">
+            <img src={Logo} alt="Logo Pempek Putri" className="logo-mobile" />
+          </h1>
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">

@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { supabase } from '../lib/supabaseClient';
 import { toast } from 'sonner@2.0.3';
+import Logo from '../img/Logo.png';
 
 const menuItems = [
   { path: '/', icon: Home, label: 'Dashboard' },
@@ -54,12 +55,16 @@ export function Sidebar({ onNavigate }: SidebarProps) {
     <aside className="w-64 bg-card border-r border-border min-h-screen flex flex-col">
       {/* Logo - Hidden on mobile (shown in Layout header) */}
       <div className="p-6 hidden md:block">
-        <h1 className="text-orange-600">🍢 Pempek Putri</h1>
+        <h1 className="text-orange-600">
+          <img src={Logo} alt="Logo Pempek Putri" className="logo" />
+        </h1>
       </div>
 
       {/* Mobile Logo */}
       <div className="p-6 md:hidden">
-        <h1 className="text-orange-600">🍢 Pempek Putri</h1>
+        <h1 className="text-orange-600">
+          <img src={Logo} alt="Logo Pempek Putri" className="logo-mobile" />
+        </h1>
       </div>
       
       <nav className="flex-1 px-3 overflow-y-auto">
