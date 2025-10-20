@@ -6,6 +6,7 @@ import { Input } from '../components/ui/input';
 import { Label } from '../components/ui/label';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../components/ui/card';
 import { toast } from 'sonner@2.0.3';
+import Logo from '../img/Logo.png';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -36,7 +37,9 @@ export default function Login() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-950/20 dark:to-orange-900/10 p-4">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
-          <div className="text-5xl sm:text-6xl mb-4">🍢</div>
+          <div className="text-5xl sm:text-6xl mb-4">
+            <img src={Logo} alt="Logo Pempek Putri" className="logo" />
+          </div>
           <CardTitle>Pempek Putri</CardTitle>
           <CardDescription>Masuk ke aplikasi pembukuan</CardDescription>
         </CardHeader>

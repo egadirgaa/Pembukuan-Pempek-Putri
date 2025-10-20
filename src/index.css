@@ -536,6 +536,20 @@
     left: 50%;
   }
 
+  .logo {
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .logo {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
   .z-40 {
     z-index: 40;
   }
